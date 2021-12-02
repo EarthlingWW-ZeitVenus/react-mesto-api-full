@@ -4,7 +4,7 @@ const allowedSites = [
   'http://:localhost:3000'
 ];
 
-console.log('Runcode in cors');
+// console.log('Runcode in cors');
 const verifyCors = (req, res, next) => {
   const { origin } = req.headers;
   const { method } = req;
