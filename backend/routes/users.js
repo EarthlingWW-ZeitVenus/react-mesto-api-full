@@ -6,11 +6,13 @@ const {
   updateUser,
   updateAvatar,
   currentUser,
+  logout,
 } = require('../controllers/users');
 const auth = require('../middlewares/auth');
 const { regExpUrl } = require('../utils/constants');
 
 router.use(auth);
+router.delete('/signout', logout);
 router.get('/', getUsers);
 router.get('/me', currentUser);
 

@@ -65,6 +65,14 @@ const login = (req, res, next) => {
     .catch(next);
 };
 
+const logout = (req, res) => {
+  return 
+    res
+    .clearCookie('jwt')
+    .status(REQUEST_SUCCESS)
+    .send({ message: 'Вы успешно вышли!' });
+};
+
 const createUser = (req, res, next) => {
   bcrypt.hash(req.body.password, 10)
     .then((hash) => User.create({
@@ -149,4 +157,5 @@ module.exports = {
   updateAvatar,
   login,
   currentUser,
+  logout,
 };
