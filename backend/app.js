@@ -3,7 +3,6 @@ require('dotenv').config();
 const express = require('express');
 
 const app = express();
-// const path = require('path');
 
 const { PORT = 3000 } = process.env;
 const mongoose = require('mongoose');
@@ -20,7 +19,6 @@ mongoose.connect('mongodb://localhost:27017/mestodb', {
   useUnifiedTopology: true,
 });
 
-// app.use(express.static(path.resolve(__dirname, './public')));
 app.use(express.json());
 app.use(cookieParser());
 app.use(requestLogger);

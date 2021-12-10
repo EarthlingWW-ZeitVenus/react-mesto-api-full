@@ -104,7 +104,7 @@ const createUser = (req, res, next) => {
         next(new BadRequestError(`Переданы некорректные данные при создании пользователя - ${err.message}`));
         return;
       }
-      if (err.name === 'MongoError' && err.code === 11000) {
+      if (err.code === 11000) {
         next(new ConflictsError('Пользователь с данной почтой уже зарегистрирован'));
         return;
       }
