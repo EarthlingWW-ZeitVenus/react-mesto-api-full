@@ -1,7 +1,7 @@
 const allowedSites = [
   'http://praktikum-mesto.students.nomoredomains.rocks',
   'https://praktikum-mesto.students.nomoredomains.rocks',
-  'http://:localhost:3000'
+  'http://:localhost:3000',
 ];
 
 // console.log('Runcode in cors');
@@ -17,9 +17,9 @@ const verifyCors = (req, res, next) => {
       res.header('Access-Control-Allow-Methods', ALLOWED_METHODS);
       res.header('Access-Control-Allow-Headers', requestHeaders);
       return res.end();
-    };	    
-  };
+    }
+  }
   return next();
-}
+};
 
 module.exports = verifyCors;

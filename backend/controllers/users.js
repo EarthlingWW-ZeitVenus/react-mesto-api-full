@@ -52,8 +52,8 @@ const login = (req, res, next) => {
     .then((user) => {
       const token = jwt.sign(
         { _id: user._id },
-	NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-key',
-	{ expiresIn: '7d' }
+        NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-key',
+        { expiresIn: '7d' },
       );
       const {
         name, about, avatar,
@@ -70,11 +70,11 @@ const login = (req, res, next) => {
     .catch(next);
 };
 
-const logout = (req, res) => { 
+const logout = (req, res) => {
   res
-  .clearCookie('jwt')
-  .status(REQUEST_SUCCESS)
-  .send({ message: 'Вы успешно вышли!' });
+    .clearCookie('jwt')
+    .status(REQUEST_SUCCESS)
+    .send({ message: 'Вы успешно вышли!' });
 };
 
 const createUser = (req, res, next) => {
