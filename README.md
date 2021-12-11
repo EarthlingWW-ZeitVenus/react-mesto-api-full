@@ -1,4 +1,4 @@
 # react-mesto-api-full
 Репозиторий для приложения проекта `Mesto`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизации и регистрации пользователей, операции с карточками и пользователями. Бэкенд расположите в директории `backend/`, а фронтенд - в `frontend/`. 
   
-Cсылка на сайт, размещенный на Яндекс.Облаке - http://51.250.19.236 (по IP-адресу) или http://praktikum-mesto.students.nomoredomains.rocks (по имени домена) для фронтенда и http://api-mesto.students.nomoredomains.rocks - для бэкенда.
+Cсылка на сайт, размещенный на Яндекс.Облаке - https://51.250.19.236 (по IP-адресу) или https://praktikum-mesto.students.nomoredomains.rocks (по имени домена) для фронтенда и https://api-mesto.students.nomoredomains.rocks - для бэкенда.
