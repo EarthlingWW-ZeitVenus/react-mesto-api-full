@@ -23,11 +23,5 @@ HTML, CSS, Git, JS, React, Express.js, MongoDB
 * Opera 44 ver.
 * Safari 10.1 ver.
 * Samsung Internet 6.2 ver.
-Для корректного отображения потребуется наличие одного из браузеров, версии не ниже обозначенной:
-* Microsoft Edge 16 ver.
-* Mozilla Firefox 52 ver.
-* Google Chrome 26 ver.
-* Opera 44 ver.
-* Safari 10.1 ver.
-* Samsung Internet 6.2 ver.
+
  
